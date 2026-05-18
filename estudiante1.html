@@ -1,0 +1,166 @@
+<!-- ===================================================== -->
+<!-- estudiante1.html COMPLETO -->
+<!-- ===================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Estudiante 1</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+<!-- BOTON VOLVER -->
+
+<a
+href="estudiantes.html"
+class="primary-btn back-btn">
+
+← Volver
+
+</a>
+
+<!-- ENCABEZADO -->
+
+<div class="student-header">
+
+<h1>
+
+Javier Andres Rivera Bedoya
+
+<br>
+
+<span class="codigo-estudiante">
+
+Código: 106019_133
+
+</span>
+
+</h1>
+
+</div>
+
+<!-- INFORMACION -->
+
+<div class="content-box">
+
+<h2>
+Información Personal
+</h2>
+
+<div class="saved-content">
+
+<p>
+
+Estudiante de Contaduría Pública enfocado en la ética profesional,
+la responsabilidad social y el análisis de casos relacionados con
+la transparencia y el comportamiento ético en la profesión contable.
+
+</p>
+
+</div>
+
+</div>
+
+<br>
+
+<!-- GALERIA -->
+
+<div class="content-box">
+
+<h2>
+Galería de Imágenes
+</h2>
+
+<div class="gallery-grid">
+
+<img
+src="images/imagen1.jpeg"
+class="student-image"
+onclick="abrirImagen(this.src)">
+
+<img
+src="images/imagen2.jpeg"
+class="student-image"
+onclick="abrirImagen(this.src)">
+
+<img
+src="images/imagen3.jpeg"
+class="student-image"
+onclick="abrirImagen(this.src)">
+
+<img
+src="images/imagen4.jpeg"
+class="student-image"
+onclick="abrirImagen(this.src)">
+
+<img
+src="images/imagen5.jpeg"
+class="student-image"
+onclick="abrirImagen(this.src)">
+
+<img
+src="images/imagen6.jpeg"
+class="student-image"
+onclick="abrirImagen(this.src)">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- MODAL -->
+
+<div
+id="modalImagen"
+class="modal-imagen"
+onclick="cerrarModal()">
+
+<img
+id="imagenExpandida"
+class="imagen-expandida">
+
+</div>
+
+<!-- SCRIPT -->
+
+<script>
+
+function abrirImagen(src){
+
+document.getElementById(
+"modalImagen"
+).style.display = "flex";
+
+document.getElementById(
+"imagenExpandida"
+).src = src;
+
+}
+
+function cerrarModal(){
+
+document.getElementById(
+"modalImagen"
+).style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>

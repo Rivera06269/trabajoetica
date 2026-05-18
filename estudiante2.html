@@ -1,0 +1,93 @@
+<!-- ========================= -->
+<!-- estudiante2.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Estudiante 2</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body
+onload="cargarEncabezadoEstudiante(2); cargarContenido(2)">
+
+<div class="page-container">
+
+<a href="estudiantes.html"
+class="primary-btn back-btn">
+
+← Volver
+
+</a>
+
+<div class="student-header">
+
+<h1 id="tituloEstudiante">
+
+Página del Estudiante
+
+</h1>
+
+</div>
+
+<div class="content-box">
+
+<h2>
+Información Personal
+</h2>
+
+<textarea
+id="contenido"
+placeholder="Escribe aquí la información...">
+</textarea>
+
+<input
+type="file"
+id="imagenInput"
+class="image-input">
+
+<div class="student-buttons">
+
+<button
+class="primary-btn"
+onclick="guardarContenido(2)">
+
+Guardar Información
+
+</button>
+
+<button
+class="primary-btn"
+onclick="eliminarContenido(2)">
+
+Eliminar
+
+</button>
+
+</div>
+
+<div id="imagenesGuardadas"></div>
+
+<div
+id="contenidoGuardado"
+class="saved-content">
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

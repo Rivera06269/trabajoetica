@@ -1,0 +1,104 @@
+<!-- ========================= -->
+<!-- caso.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Estudio de Caso</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h1 class="logo">
+Estudio de Caso
+</h1>
+
+<ul class="menu">
+
+<li>
+<a href="index.html">Inicio</a>
+</li>
+
+<li>
+<a href="responsabilidad.html">Responsabilidad Ética</a>
+</li>
+
+<li>
+<a href="estudiantes.html">Estudiantes</a>
+</li>
+
+<li>
+<a href="caso.html">Estudio de Caso</a>
+</li>
+
+</ul>
+
+</nav>
+
+<div class="page-container">
+
+<div class="content-box">
+
+<h2>
+Caso de Estudio
+</h2>
+
+<textarea
+id="contenidoCaso"
+placeholder="Escribe aquí...">
+</textarea>
+
+<div class="student-buttons">
+
+<button
+class="primary-btn"
+onclick="guardarCaso()">
+
+Guardar
+
+</button>
+
+<button
+class="primary-btn"
+onclick="editarCaso()">
+
+Editar
+
+</button>
+
+<button
+class="primary-btn"
+onclick="eliminarCaso()">
+
+Eliminar
+
+</button>
+
+</div>
+
+<div
+id="contenidoCasoGuardado"
+class="saved-content">
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+cargarCaso();
+</script>
+
+</body>
+</html>

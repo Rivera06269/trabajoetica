@@ -1,0 +1,104 @@
+<!-- ========================= -->
+<!-- responsabilidad.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsabilidad Ética</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h1 class="logo">
+Responsabilidad Ética
+</h1>
+
+<ul class="menu">
+
+<li>
+<a href="index.html">Inicio</a>
+</li>
+
+<li>
+<a href="responsabilidad.html">Responsabilidad Ética</a>
+</li>
+
+<li>
+<a href="estudiantes.html">Estudiantes</a>
+</li>
+
+<li>
+<a href="caso.html">Estudio de Caso</a>
+</li>
+
+</ul>
+
+</nav>
+
+<div class="page-container">
+
+<div class="content-box">
+
+<h2>
+Contenido
+</h2>
+
+<textarea
+id="contenidoResponsabilidad"
+placeholder="Escribe aquí...">
+</textarea>
+
+<div class="student-buttons">
+
+<button
+class="primary-btn"
+onclick="guardarResponsabilidad()">
+
+Guardar
+
+</button>
+
+<button
+class="primary-btn"
+onclick="editarResponsabilidad()">
+
+Editar
+
+</button>
+
+<button
+class="primary-btn"
+onclick="eliminarResponsabilidad()">
+
+Eliminar
+
+</button>
+
+</div>
+
+<div
+id="contenidoResponsabilidadGuardado"
+class="saved-content">
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+cargarResponsabilidad();
+</script>
+
+</body>
+</html>
